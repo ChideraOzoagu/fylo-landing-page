@@ -1,0 +1,129 @@
+@media screen and (min-width: 700px) {
+  nav {
+    padding-inline: 2rem;
+
+    a {
+      padding: 1rem;
+    }
+    a:hover {
+      color: $darkBlue;
+      transition: ease-in-out 0.2s;
+    }
+  }
+
+  .starter {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 1rem;
+
+    .input-flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      input {
+        flex: 0.6;
+      }
+
+      button {
+        flex: 0.4;
+        margin: 0 10px;
+      }
+    }
+  }
+  
+  .text-left {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .productivity {
+    background: url(/images/bg-curve-desktop.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    h2 {
+      text-align: left;
+      font-size: 30px;
+    }
+    p {
+      width: 80%;
+      line-height: 1.2;
+    }
+    .centre {
+      justify-content: start;
+    }
+
+    .quotes {
+      max-width: 450px;
+      margin: 2rem 0;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+
+    a:hover {
+      color: $cyanHover;
+      border-bottom: 1px solid $cyanHover;
+    }
+  }
+
+  .early-access {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2rem;
+
+    .details {
+      width: 40%;
+      line-height: 1.5;
+    }
+    .buttons {
+      width: 50%;
+      margin-left: 4rem;
+    }
+
+    button {
+      width: 40%;
+      font-size: 0.8rem;
+    }
+  }
+
+  .fylo-footer {
+    padding: 2rem;
+
+    .footer-flex {
+      flex-direction: row;
+      gap: 8rem;
+    }
+
+    a:hover {
+      color: $desaturatedBlue;
+      transition: ease-in-out 0.2s;
+    }
+
+    .fa-brands:hover {
+      color: $blueHover;
+      border: 1px solid $blueHover;
+      cursor: pointer;
+    }
+  }
+
+  button:hover {
+    background-color: $blueHover;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+  }
+}

@@ -2,10 +2,8 @@
 @import "colors";
 @import "config";
 
-
-
 body {
-    background-color: white;
+    background-color: $lightGrayishBlue;
     font-family: $bodyFont;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -29,9 +27,7 @@ input {
 button {
     @include utilities;
     background-color: $brightBlue;
-    color: white;
-    font-family: $headerFont;
-    font-size: 1rem;
+    color: $lightGrayishBlue;
     margin-top: 1rem;
 }
 nav {
@@ -52,7 +48,7 @@ nav {
 }
 .starter {
     text-align: center;
-    padding: 0 10px;
+    padding: 0 1rem;
     color: $desaturatedBlue;
 
     img {
@@ -74,8 +70,8 @@ nav {
 .productivity {
     background: url(/images/bg-curve-mobile.svg) no-repeat top center;
     background-size: cover;
-    margin-top: 50px;
-    padding: 2rem;
+    margin-top: 2.5rem;
+    padding: 0 1rem;
     
 
     .illustration-2 {
@@ -88,7 +84,7 @@ nav {
         color: $darkBlue;
     }
     p {
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
         color: $desaturatedBlue;
     }
     .centre {
@@ -97,20 +93,16 @@ nav {
         justify-content: center;
         
         a {
-        color: $moderateCyan;
-
+            color: $moderateCyan;
+            border-bottom: 1px solid $moderateCyan;
+            line-height: 2;
         }
 
         img {
             margin-left: 5px;
         }
     }
-    .border-btm {
-        border-bottom: 1px solid $moderateCyan;
-        width: 150px;
-        margin: 0 auto;
-        padding: 5px 0;
-    }
+   
     .quotes {
         background-color: white;
         width: 100%;
@@ -137,13 +129,14 @@ nav {
 
 .early-access {
     background-color: $desaturatedBlue;
-    color: white;
+    color: $lightGray;
     text-align: center;
     padding: 2rem;
 
     h2 {
         padding-bottom: 1rem;
         font-weight: 700;
+        color: $lightGrayishBlue;
     }
 
     p {
@@ -160,10 +153,16 @@ nav {
     }
 }
 
-footer {
+.fylo-footer {
     padding: 2rem;
     background-color: $darkBlue;
-    color: white;
+    color: $lightGrayishBlue;
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
     // white logo(fix)
     .logo {
         color: white; 
@@ -172,32 +171,34 @@ footer {
 
     .contact {
         padding: 5px 0;
+        color: $lightGray;
 
         img {
             margin-right: 10px;
+            width: 15px;
         }
     }
 
     a {
-        color: $lightGrayishBlue;
+        color: $lightGray;
     }
 
     ul {
-        padding: 10px 0;
 
         li {
             padding: 5px 0;
         }
     }
-    // Should be centrally placed
     .fa {
-        margin: 10px auto;
+        margin: 0 auto;
     }
     .fa-brands {
+        border-radius: 50%;
         margin-inline: 5px;
         padding: 8px;
-        border: 1px solid white;
-        border-radius: 50%;
+        border: 1px solid $lightGrayishBlue;
     }
 
 }
+
+@import "desktopview";

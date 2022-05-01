@@ -3,8 +3,12 @@ $bodyFont: 'Open Sans', sans-serif;
 
 @mixin utilities {
     width: 100%;
-    padding: 10px;
+    padding: 0.6rem;
     border-radius: 5px;
+    font-family: $headerFont;
+    // font-size: 1rem;
+    font-weight: 400;
+    color: $desaturatedBlue;
 }
 
 .attribution { font-size: 11px; text-align: center; }
